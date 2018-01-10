@@ -1,0 +1,28 @@
+Package: rSDQDM
+Type: Package
+Title: Downscaling by SDQDM method
+Version: 1.1.1
+Authors@R: c(person("Jaepil Cho", role=c("aut", "cre"), email="jpcho89@gmail"),
+			       person("Wonil Cho", role="aut", email="pablito@apcc21.org"))
+Maintainer: Wonil Cho <pablito@apcc21.org>
+Description: This package has been developed for statistical downscaling of CMIP5 (Coupled Model Intercomparison Project phase five) climate change scenario data at a daily time-scale using empirical quantile mapping method. This package uses the clipped national-level climate change scenario data which is provided through the ADSS (http://adss.apcc21.org/). The original Global Climate Model (GCM) data was collected from the Earth System Grid Federation (ESGF, http://pcmdi9.llnl.gov/esgf-web-fe/). Non-parametric (empirical) quantile mapping method was applied monthly for the 6 weather variables provided.
+License: GPL(>=2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    stringr,
+    RCurl,
+    yaml,
+    mise,
+	gsubfn
+Depends: ncdf4, 
+    dplyr,
+    qmap,
+    gstat,
+    sp,
+    maptools,
+    energy,
+    Matrix,
+    chron,
+    zoo
+RoxygenNote: 6.0.1
